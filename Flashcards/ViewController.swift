@@ -15,18 +15,40 @@ class ViewController: UIViewController {
     @IBOutlet weak var card: UIView!
     
     
+    @IBOutlet weak var btnOptionOne: UIButton!
+    @IBOutlet weak var btnOptionTwo: UIButton!
+    @IBOutlet weak var btnOptionThree: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         card.layer.cornerRadius = 20.0
-//        card.clipsToBounds = true
+//        card.clipsToBounds = tru
         card.layer.shadowRadius = 20.0
         card.layer.shadowOpacity = 0.2
         
+        // labels
         frontLabel.layer.cornerRadius = 20.0
         backLabel.layer.cornerRadius = 20.0
         frontLabel.clipsToBounds = true
         backLabel.clipsToBounds = true
+        
+        //botton
+        btnOptionOne.layer.cornerRadius = 20.0
+        btnOptionTwo.layer.cornerRadius = 20.0
+        btnOptionThree.layer.cornerRadius = 20.0
+        
+        btnOptionOne.clipsToBounds = true
+        btnOptionTwo.clipsToBounds = true
+        btnOptionThree.clipsToBounds = true
+        
+        btnOptionOne.layer.borderWidth = 3.0
+        btnOptionTwo.layer.borderWidth = 3.0
+        btnOptionThree.layer.borderWidth = 3.0
+//        btnOptionOne.layer.borderColor =
+        
+        
         
     }
 
@@ -39,6 +61,21 @@ class ViewController: UIViewController {
             frontLabel.isHidden = true
         }
     }
+    
+    
+    @IBAction func didTapOptionOne(_ sender: Any) {
+        btnOptionOne.isHidden = true
+    }
+    
+    @IBAction func didTapOptionTwo(_ sender: Any) {
+        frontLabel.isHidden = true
+    }
+    
+    
+    @IBAction func didTapOptionThree(_ sender: Any) {
+        btnOptionThree.isHidden = true
+    }
+    
     
     
 }
