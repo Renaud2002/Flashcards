@@ -12,7 +12,7 @@
 
 ### App Walk-though
 
-<img src="http://g.recordit.co/mZrcrRAazN.gif" width=200><br>
+<img src="http://g.recordit.co/WORVS7RWe0.gif" width=200><br>
 
 
 ## Required
