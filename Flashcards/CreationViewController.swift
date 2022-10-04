@@ -27,9 +27,24 @@ class CreationViewController: UIViewController {
         
         let answerText = answerTextField.text
         
-        flashcardsController.updateFlashcard(question: questionText!, answer: answerText!)
+        //show error is the text inputs are empty
+        if(questionText == nil || answerText == nil || questionText!.isEmpty || answerText!.isEmpty){
+            
+            let alert = UIAlertController(title:"Missing Text", message:"You forgot to input either a question or an answer", preferredStyle: UIAlertController.Style.alert)
+            
+            let okAction = UIAlertAction(title:"Ok", style: .default)
+            
+            alert.addAction(okAction)
+            
+            present(alert, animated: true)
+            
+        }else{
+            flashcardsController.updateFlashcard(question: questionText!, answer: answerText!)
+            dismiss(animated: true)
+        }
         
-        dismiss(animated: true)
+        
+        
     }
     
 }
