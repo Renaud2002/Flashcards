@@ -5,14 +5,12 @@
 ## Lab 2
 
 ### App Description
-`TODO://` Add app description
+
+With this lab new functionality was added to the flashcards app now users are able to add a custom question of their own and see it displayed back in the main screen. This is done by adding a new screen that will take the custom question and answer and pass it to the main screen to be displayed
 
 ### App Walk-though
-`TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif)
 
 <img src="http://g.recordit.co/XiNXm6LCQs.gif" width=200><br>
-
-`TODO://` In the User stories section below, add an `x` between the `-[ ]` like this `- [x]` for any user story you complete. (☝️ Remove this paragraph after after checking off user stories)
 
 ## Required
 - [x] User can open the creation screen
