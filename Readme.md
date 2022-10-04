@@ -10,7 +10,7 @@ With this lab new functionality was added to the flashcards app now users are ab
 
 ### App Walk-though
 
-<img src="http://g.recordit.co/5X7UoxJzKW.gif" width=200><br>
+<img src="http://g.recordit.co/VUP9p2KKS2.gif" width=200><br>
 
 ## Required
 - [x] User can open the creation screen
