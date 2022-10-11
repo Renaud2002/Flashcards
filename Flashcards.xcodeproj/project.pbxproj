@@ -17,6 +17,8 @@
 		78B71E3C28D1706B002003D9 /* FlashcardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B71E3B28D1706B002003D9 /* FlashcardsTests.swift */; };
 		78B71E4628D1706C002003D9 /* FlashcardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B71E4528D1706C002003D9 /* FlashcardsUITests.swift */; };
 		78B71E4828D1706C002003D9 /* FlashcardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B71E4728D1706C002003D9 /* FlashcardsUITestsLaunchTests.swift */; };
+		78B8A76228F4F7D70055E764 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B71E2828D17068002003D9 /* ViewController.swift */; };
+		78B8A76328F4F7D80055E764 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B71E2828D17068002003D9 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -272,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B8A76328F4F7D80055E764 /* ViewController.swift in Sources */,
 				78B71E3C28D1706B002003D9 /* FlashcardsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B8A76228F4F7D70055E764 /* ViewController.swift in Sources */,
 				78B71E4628D1706C002003D9 /* FlashcardsUITests.swift in Sources */,
 				78B71E4828D1706C002003D9 /* FlashcardsUITestsLaunchTests.swift in Sources */,
 			);

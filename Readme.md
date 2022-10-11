@@ -1,6 +1,26 @@
 ## Flashcards App
 
-📝 `NOTE:` Paste the README templates for each subsequent lab here at the top, (i.e. lab 2, 3, 4). This will show a history of your development process including which users stories you completed and how your app looked and functioned at each step.
+## Lab 3
+
+### App Description
+
+In the lab we added more functionality to our flashcards app now we are able to save the cards to an array and to a disk using UserDefault so that we open the app the old flashcards we made are still there. Also a delete functionality was added so now a user can delete a flashcard
+
+### App Walk-though
+
+<img src="http://g.recordit.co/Llyui6So4R.gif" width=200><br>
+
+## Required
+- [x] User can browse through multiple flashcards
+- [x] User can re-open the app and see previously created flashcards
+- [x] Push code to GitHub
+## Optional
+- [x] User can delete a flashcard
+- [ ] User can edit existing flashcard
+- [ ] User can store multiple choice questions
+
+
+
 
 ## Lab 2
 

@@ -26,6 +26,12 @@ class CreationViewController: UIViewController {
         let questionText = questionTextField.text
         
         let answerText = answerTextField.text
+//        var initialQuestion = 1;
+        
+//        var isExisting = false
+//        if initialQuestion != nil{
+//            isExisting = true
+//        }
         
         //show error is the text inputs are empty
         if(questionText == nil || answerText == nil || questionText!.isEmpty || answerText!.isEmpty){
@@ -39,7 +45,7 @@ class CreationViewController: UIViewController {
             present(alert, animated: true)
             
         }else{
-            flashcardsController.updateFlashcard(question: questionText!, answer: answerText!)
+            flashcardsController.updateFlashcard(question: questionText!, answer: answerText! )
             dismiss(animated: true)
         }
         
