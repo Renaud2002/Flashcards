@@ -8,7 +8,7 @@ In the lab we added more functionality to our flashcards app now we are able to 
 
 ### App Walk-though
 
-<img src="http://g.recordit.co/Llyui6So4R.gif" width=200><br>
+<img src="http://g.recordit.co/BveCj0O4Bc.gif" width=200><br>
 
 ## Required
 - [x] User can browse through multiple flashcards
