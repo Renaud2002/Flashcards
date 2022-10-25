@@ -93,11 +93,40 @@ class ViewController: UIViewController {
     
     @IBAction func didTapOnFlashcard(_ sender: Any) {
         
-        if(frontLabel.isHidden == true){
-            frontLabel.isHidden = false
-        }else{
-            frontLabel.isHidden = true
+        flipFlashcard()
+    }
+    // flash card animation begin
+    func flipFlashcard() {
+        UIView.transition(with: card, duration: 0.3, options: .transitionFlipFromRight, animations:{
+            if(self.frontLabel.isHidden == true){
+                self.frontLabel.isHidden = false
+            }else{
+                self.frontLabel.isHidden = true
+            }
+        })
+        
+    }
+    
+    func animateCardOut() {
+        UIView.animate(withDuration: 0.3, animations:  {
+            self.card.transform = CGAffineTransform.identity.translatedBy(x: -300.0, y: 0.0)
+        }, completion: { finished in
+            self.updateLabels()
+            
+            self.animateCardIn()
+        })
+    }
+    func animateCardIn() {
+        
+        card.transform = CGAffineTransform.identity.translatedBy(x: 300.0, y: 0.0)
+
+        UIView.animate(withDuration: 0.3) {
+            self.card.transform = CGAffineTransform.identity
         }
+        
+       
+        
+        
     }
     
     func updateFlashcard(question: String, answer: String) {
@@ -217,6 +246,9 @@ class ViewController: UIViewController {
         
         // update buttons
         updateNextPrevButtons()
+        
+        // animation
+        animateCardIn()
     }
     
     @IBAction func didTapOnNext(_ sender: Any) {
@@ -225,10 +257,13 @@ class ViewController: UIViewController {
         currentIndex = currentIndex + 1
         
         // update labels
-        updateLabels()
+        updateLabels()  // because of transition
         
         // update buttons
         updateNextPrevButtons()
+        
+        // animation
+        animateCardOut()
     }
     
     @IBAction func didTapOnDelete(_ sender: Any) {
